@@ -30,5 +30,10 @@ next.addEventListener('click', function(){
         items[move].classList.remove('show');
         move++;
         items[move].classList.add('show');
+    }else if(move = 4){
+        items[move].classList.remove('show');
+        move = 0 - 1;
+        move++;
+        items[move].classList.add('show');
     }
 });
