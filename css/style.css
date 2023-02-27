@@ -29,10 +29,13 @@ button{
     position: absolute;
 }
 .up{
-    top: 10px;
+    right: 10px;
+    z-index: 10;
 }
 .down{
-    bottom: 10px;
+    bottom: 0px;
+    right: 10px;
+    z-index: 20;
 }
 img{
     width: 100%;
@@ -47,4 +50,20 @@ img{
 }
 .show{
     display: block;
+}
+.right_slide{
+    height: 100%;
+    width: 20%;
+    border: 1px solid;
+    z-index: 10;
+    background-color: brown;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.little_pic{
+    height: calc(100% / 5);
+}
+.light{
+    border: 2px solid red;
 }
