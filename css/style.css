@@ -4,24 +4,47 @@
     box-sizing: border-box;
 }
 .container{
-    height: 300px;
-    width: 600px;
+    height: 50%;
+    width: 50%;
     background-color: lightskyblue;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.prepost_box{
+.slider{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 button{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     margin: 10px 0;
+    position: absolute;
+}
+.up{
+    top: 10px;
+}
+.down{
+    bottom: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.show{
+    display: block;
 }
