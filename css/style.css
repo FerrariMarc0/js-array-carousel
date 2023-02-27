@@ -6,6 +6,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+    background-size:cover;
+}
 /********************
     MAIN-CONTAINERS
 *********************/
@@ -17,6 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-bottom-left-radius: 50%;
+    
 }
 .slider{
     display: flex;
@@ -26,6 +31,7 @@
     width: 100%;
     justify-content: space-between;
     position: relative;
+    box-shadow: 5px 5px 15px rgba(200, 0, 0, 0.5);
 }
 /********************
         BUTTONS
@@ -76,7 +82,7 @@ img{
     height: calc(100% / 5);
 }
 .light{
-    border: 4px solid rgba(250, 250, 200, 0.5);
+    border: 2px solid rgba(200, 0, 0, 0.5);
     transform: scale(1.2);
     transition: 0.5s;
 }

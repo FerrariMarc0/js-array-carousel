@@ -24,6 +24,12 @@ prev.addEventListener('click', function(){
         move--;
         items[move].classList.add('show');
         lumus[move].classList.add('light');
+    }else if(move = 4){
+        items[move].classList.remove('show');
+        lumus[move].classList.remove('light');
+        move--;
+        items[move].classList.add('show');
+        lumus[move].classList.add('light');
     }
 });
 next.addEventListener('click', function(){
