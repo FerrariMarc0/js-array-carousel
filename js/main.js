@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const images= ['01.webp','02.webp', '03.webp', '04.webp', '05.webp'];
 const carousel= document.querySelector('.slider');
@@ -18,34 +18,32 @@ const items= document.querySelectorAll('.item');
 const lumus= document.querySelectorAll('.little_pic')
 
 prev.addEventListener('click', function(){
-    if(0 < move){
-        items[move].classList.remove('show');
-        lumus[move].classList.remove('light');
-        move--;
-        items[move].classList.add('show');
-        lumus[move].classList.add('light');
-    }else if(move = 4){
-        items[move].classList.remove('show');
-        lumus[move].classList.remove('light');
-        move--;
-        items[move].classList.add('show');
-        lumus[move].classList.add('light');
-    }
-});
-next.addEventListener('click', function(){
     
-    if(move < items.length - 1){
-        items[move].classList.remove('show');
-        lumus[move].classList.remove('light');
-        move++;
-        items[move].classList.add('show');
-        lumus[move].classList.add('light');
-    }else if(move = 4){
-        items[move].classList.remove('show');
-        lumus[move].classList.remove('light');
-        move = 0 - 1;
-        move++;
-        items[move].classList.add('show');
-        lumus[move].classList.add('light');
+    items[move].classList.remove('show');
+    lumus[move].classList.remove('light');
+
+    if(move > 0){
+         move--;
+        
+    }else{
+        move = items.length - 1;
     }
+
+    items[move].classList.add('show');
+    lumus[move].classList.add('light');
+});
+
+next.addEventListener('click', function(){
+    items[move].classList.remove('show');
+    lumus[move].classList.remove('light');
+
+    if(move < items.length - 1){
+        move++;
+        
+    }else {
+        move = 0;
+    }
+
+    items[move].classList.add('show');
+    lumus[move].classList.add('light');
 });
